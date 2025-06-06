@@ -47,11 +47,6 @@
                 border-radius: 5px;
                 transition: 0.2s;
             }  
-            div {
-                background-color: rgb(81, 218, 172);
-                border-radius: 10px;
-                color: #fff;
-            }
             p {
                 padding: 15px;
             }
@@ -114,18 +109,49 @@
                 display: flex;
                 justify-items: center;
             }
+            .parent-e {
+                position: absolute;
+                display: flex;
+                margin: 0px 0px 0px 280px;     
+            }
+            .child-e {
+                position: relative;
+                background-color: mediumaquamarine;
+                color: white;
+                margin: 50px 0px 0px 10px;
+                width: 435px;
+                height: 200px;
+                font-size: 16px;
+                border-radius: 0px 30px 0px 30px;
+            }
         </style>
     </head>
     <body>
         <header>
                 <h1><i>Indian Cuisines</i></h1>
                 <center>
-                    <img src="Head.jpg" alt="The traditional food of India has been widely appreciated for its fabulous use of herbs and
-                        spices. Indian cuisine is known for its large assortment of dishes. The cooking style varies from region to
-                        region and is largely divided into South Indian & North Indian cuisine. India is quite famous for its
-                        diverse multi cuisine available in a large number of restaurants and hotel resorts, which is reminiscent of
-                        unity in diversity." style="width: min-content; height: min-content;">
+                    <div>
+                        <centre>
+                            <img class="parent-e" src="Head.jpg">                        
+                        </centre>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="child-e">The traditional food of India has been widely appreciated for its fabulous use of herbs and
+                            spices. Indian cuisine is known for its large assortment of dishes. The cooking style varies from region to
+                            region and is largely divided into South Indian & North Indian cuisine. India is quite famous for its
+                            diverse multi cuisine available in a large number of restaurants and hotel resorts, which is reminiscent of
+                            unity in diversity.</p>
+                    </div>
                 </center>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
         </header>
         <nav class="nowi">
             <ul>
@@ -265,11 +291,5 @@
                 </li>
             </ul>
         </nav>
-
-        <script>
-            function changeText() {
-                document.getElementById('myText').textContent = '+8801784777000';
-            }
-        </script>
     </body>
 </html>
